@@ -1,4 +1,5 @@
 # tech-mart
+![tech-mart](https://muhammedshiyadh.netlify.app/tech--mart.png)
 
 This project consists of a client-server application.
 
