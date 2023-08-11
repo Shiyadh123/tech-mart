@@ -1,4 +1,4 @@
-//Not a part of the project
+//Not a part of the project-seeder code
 
 import mongoose from "mongoose";
 import dotenv from "dotenv";
@@ -13,7 +13,6 @@ import connectDB from "./config/db.js";
 dotenv.config();
 
 connectDB();
-//
 const importData = async () => {
   try {
     // await Order.deleteMany();
