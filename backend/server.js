@@ -11,6 +11,11 @@ import { notFound, errorHandler } from "./middleware/errorMiddleware.js";
 import uploadRoutes from "./routes/uploadRoutes.js";
 import bodyParser from "body-parser";
 
+import os from "os";
+const networkInterfaces = os.networkInterfaces();
+const ipAddress = networkInterfaces["eth0"]?.[0]?.address || "127.0.0.1";
+console.log(`Server IP address: ${ipAddress}`);
+
 const port = process.env.PORT || 5000;
 
 connectDB();
